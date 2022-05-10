@@ -16,6 +16,8 @@ namespace FilmesAPI.Data.Dtos
         public string Genero { get; set; }
         [Range(1, 600, ErrorMessage = "A duração mínima é de 1 e a mãxima de 600")]
         public int Duracao { get; set; }
-        public DateTime HoraDaConsulta { get; set; } 
+        public DateTime HoraDaConsulta { get; set; }
+        public int ClassificacaoEtaria { get; set; }
+
     }
 }

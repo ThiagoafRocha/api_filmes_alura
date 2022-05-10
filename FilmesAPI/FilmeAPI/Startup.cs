@@ -1,4 +1,5 @@
 using FilmeAPI.Data;
+using FilmesAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,6 +36,11 @@ namespace FilmeAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FilmeAPI", Version = "v1" });
             });
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddScoped<CinemaService, CinemaService>();
+            services.AddScoped<EnderecoService, EnderecoService>();
+            services.AddScoped<FilmeService, FilmeService>();
+            services.AddScoped<GerenteService, GerenteService>();
+            services.AddScoped<SessaoService, SessaoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
