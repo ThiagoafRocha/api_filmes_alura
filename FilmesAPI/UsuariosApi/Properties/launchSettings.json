@@ -1,11 +1,11 @@
-{
+﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:22281",
-      "sslPort": 44332
+      "applicationUrl": "http://localhost:8509",
+      "sslPort": 44311
     }
   },
   "profiles": {
@@ -15,21 +15,13 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "FilmeAPI": {
+    "UsuariosApi": {
       "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:6001;http://localhost:6000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:5001;http://localhost:5000"
-    },
-    "WSL": {
-      "commandName": "WSL2",
-      "launchUrl": "https://localhost:5001",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_URLS": "https://localhost:5001;http://localhost:5000"
-      },
-      "distributionName": ""
+      }
     }
   }
 }
